@@ -15,7 +15,6 @@
 
 	.footer_redes ul li a img {
 		width: 26px;
-		
 	}
 
 }
@@ -51,6 +50,10 @@
 		border-color: #fff;
 	}
 
+	.header_menu ul li a.menu_ativo {
+		border-color: #fff;
+	}
+
 	.introducao {
 		margin-top: 0;
 		padding-top: 40px;
@@ -62,12 +65,31 @@
 		font-size: 36px;
 	}
 
+	.introducao_interna {
+		margin-top: 0;
+	}
+
 	.call {
 		padding-top: 10px;
 	}
 
+	/* Qualidade */
+
 	.qualidade:after {
 		display: none;
+	}
+
+	/* Sobre */
+
+	.missao_sobre p {
+		padding-right: 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.missao_sobre ul li {
+		font-size: 14px;
+		line-height: 25px;
 	}
 
 }
