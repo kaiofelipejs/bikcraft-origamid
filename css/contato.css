@@ -81,7 +81,6 @@
 
 .contato_dados ul li a:hover {
    border-color: #000;
-   filter: brightness(-400%); 
 }
 
 .contato_dados p {

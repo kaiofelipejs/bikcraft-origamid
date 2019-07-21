@@ -63,6 +63,7 @@ img {
    letter-spacing: .1em;
    text-transform: uppercase;
    line-height: 20px;
+   transition: all .3s ease;
 }
 
 .btn:hover {
@@ -104,6 +105,7 @@ img {
    font-size: 14px;
    line-height: 20px;
    padding: 10px 0;
+   transition: all .3s ease;
 }
 
 .header_menu ul li a:hover {
@@ -368,15 +370,68 @@ img {
    border: 3px solid #fec63e;
    display: block;
    padding: 10px;
+   transition: all .3s ease;
 }
 
 .footer ul li a:hover {
    border-color: #fff;
-   filter: brightness(400%);
 }
 
 .copy {
    width: 100%;
    background: #fec63e;
    padding: 20px 0;
+}
+
+/* Animações */
+
+.js .introducao h1,
+.js .introducao blockquote,
+.js .introducao .btn,
+.js .introducao_interna h1,
+.js .introducao_interna p,
+.js .animar,
+.js .animar_interno
+{
+   opacity: 0;
+}
+
+.animated {
+   -webkit-animation-dusration: 1s;
+      animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+   from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+   }
+
+   to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+   }
+}
+ 
+@keyframes fadeInDown {
+   from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+   }
+
+   to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.fadeInDown {
+   -webkit-animation-name: fadeInDown;
+   animation-name: fadeInDown;
 }
